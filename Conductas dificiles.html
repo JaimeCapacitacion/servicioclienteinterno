@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conductas Difíciles en el Trabajo | Gestión de Servicio al Cliente Interno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e7f1 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 25px;
+            background: linear-gradient(90deg, #2c3e50 0%, #4a6491 100%);
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        
+        .course-tag {
+            display: inline-block;
+            background: #ff6b6b;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            padding: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-icon {
+            font-size: 28px;
+            margin-right: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .card-content {
+            padding: 25px;
+        }
+        
+        .card-content p {
+            font-size: 1.05rem;
+            font-weight: 400;
+        }
+        
+        .negative-bg {
+            background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%);
+        }
+        
+        .aggressive-bg {
+            background: linear-gradient(90deg, #e67e22 0%, #d35400 100%);
+        }
+        
+        .non-collab-bg {
+            background: linear-gradient(90deg, #f39c12 0%, #e67e22 100%);
+        }
+        
+        .resistant-bg {
+            background: linear-gradient(90deg, #27ae60 0%, #2ecc71 100%);
+        }
+        
+        .manipulator-bg {
+            background: linear-gradient(90deg, #8e44ad 0%, #9b59b6 100%);
+        }
+        
+        .disconnected-bg {
+            background: linear-gradient(90deg, #3498db 0%, #2980b9 100%);
+        }
+        
+        .key-points {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+            margin-top: 30px;
+        }
+        
+        .key-points h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .key-points ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            list-style-type: none;
+        }
+        
+        .key-points li {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            font-weight: 500;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .key-points li i {
+            color: #3498db;
+            font-size: 1.2rem;
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        @media (max-width: 768px) {
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Conductas Difíciles en el Trabajo</h1>
+            <p class="subtitle">Identificación y comprensión de patrones problemáticos en el entorno laboral</p>
+            <div class="course-tag">GESTIÓN DE SERVICIO AL CLIENTE INTERNO</div>
+        </header>
+        
+        <div class="cards-container">
+            <!-- Tarjeta 1: El negativo constante -->
+            <div class="card">
+                <div class="card-header negative-bg">
+                    <div class="card-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <h2 class="card-title">El Negativo Constante</h2>
+                </div>
+                <div class="card-content">
+                    <p>Persona que sistemáticamente enfatiza aspectos negativos, se queja frecuentemente y desmotiva al equipo con su actitud pesimista. Suele resistirse a soluciones y enfocarse exclusivamente en problemas.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 2: El agresor -->
+            <div class="card">
+                <div class="card-header aggressive-bg">
+                    <div class="card-icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h2 class="card-title">El Agresor</h2>
+                </div>
+                <div class="card-content">
+                    <p>Manifiesta hostilidad mediante comentarios hirientes, sarcasmo o interrupciones (agresión verbal) o a través de acciones pasivas como ignorar solicitudes o difundir rumores (agresión pasiva).</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 3: El no colaborador -->
+            <div class="card">
+                <div class="card-header non-collab-bg">
+                    <div class="card-icon">
+                        <i class="fas fa-user-times"></i>
+                    </div>
+                    <h2 class="card-title">El No Colaborador</h2>
+                </div>
+                <div class="card-content">
+                    <p>Evita compartir información relevante, se niega a ayudar a compañeros y no participa activamente en tareas grupales. Su falta de cooperación dificulta el avance colectivo y el trabajo en equipo.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 4: El resistente al cambio -->
+            <div class="card">
+                <div class="card-header resistant-bg">
+                    <div class="card-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h2 class="card-title">El Resistente al Cambio</h2>
+                </div>
+                <div class="card-content">
+                    <p>Se opone sistemáticamente a nuevas ideas, procesos, herramientas o metodologías. Prefiere mantener el statu quo incluso cuando el cambio es necesario y beneficioso para la organización.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 5: El manipulador -->
+            <div class="card">
+                <div class="card-header manipulator-bg">
+                    <div class="card-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h2 class="card-title">El Manipulador</h2>
+                </div>
+                <div class="card-content">
+                    <p>Intenta influir en los demás para beneficio propio utilizando estrategias como victimismo, exageración o dramatismo. Busca ser el centro de atención o eludir responsabilidades mediante artimañas emocionales.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 6: El desconectado -->
+            <div class="card">
+                <div class="card-header disconnected-bg">
+                    <div class="card-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h2 class="card-title">El Desconectado</h2>
+                </div>
+                <div class="card-content">
+                    <p>Muestra falta de compromiso e interés mediante ausencias frecuentes, tardanzas crónicas o desconexión durante reuniones y actividades colaborativas. Su participación es mínima y poco constructiva.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="key-points">
+            <h2>Estrategias de Manejo</h2>
+            <ul>
+                <li><i class="fas fa-comments"></i> Comunicación asertiva y empática para abordar comportamientos problemáticos</li>
+                <li><i class="fas fa-handshake"></i> Establecer expectativas claras y límites profesionales</li>
+                <li><i class="fas fa-heart"></i> Fomentar un ambiente de trabajo positivo y de apoyo mutuo</li>
+                <li><i class="fas fa-list-ol"></i> Proporcionar retroalimentación constructiva y específica</li>
+                <li><i class="fas fa-hands-helping"></i> Ofrecer apoyo y recursos para el desarrollo profesional</li>
+                <li><i class="fas fa-balance-scale"></i> Aplicar políticas de la organización de manera consistente</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>Material didáctico para el curso de Gestión de Servicio al Cliente Interno | Diseño adaptado para formación profesional</p>
+            <p>© 2023 - Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>
